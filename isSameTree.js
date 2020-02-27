@@ -1,3 +1,9 @@
+// INPUT: 1         1
+//       / \       / \
+//      2   3     2   3
+
+// OUTPUT: true
+
 const isSameTree = (p, q) => {
   if (!p && !q) return true;
   if (!p || !q || p.val !== q.val) return false;
