@@ -13,4 +13,4 @@ const maxProfit = prices => {
   return maxprofit;
 };
 
-console.log(maxProfit([1, 2, 3, 4, 6]));
+console.log(maxProfit([7, 1, 5, 3, 6, 4]));
