@@ -18,10 +18,6 @@ const searchInsert = (arr, val) => {
 
   while (start <= end) {
     const mid = Math.floor((start + end) / 2);
-    console.log(start, mid, end);
-    // if (start === mid) {
-    //   return end;
-    // }
     if (val > arr[mid]) {
       start = mid + 1;
     } else if (val === arr[mid] && val !== arr[mid - 1]) {

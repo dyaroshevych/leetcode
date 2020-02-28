@@ -1,3 +1,6 @@
+// INPUT: 1, 4
+// OUTPUT: 2
+
 const binaryFromNum = num => {
   let binaryStr = "";
   while (num > 0) {
