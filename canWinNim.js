@@ -1,3 +1,6 @@
+// INPUT: 4
+// OUTPUT: false
+
 // DP solution
 const canWinNimDP = num => {
   let arr = [true, true, true];
