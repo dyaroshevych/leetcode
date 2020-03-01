@@ -1,3 +1,10 @@
+// INPUT:     5
+//           / \
+//          1   4
+//             / \
+//            3   6
+// OUTPUT: false
+
 const isValidBST = (head, minValue = -Infinity, maxValue = Infinity) => {
   if (head === null) {
     return true;
