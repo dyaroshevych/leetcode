@@ -1,3 +1,6 @@
+// INPUT: [-1, 0, 1, 2, -1, -4]
+// OUTPUT: [ [ -1, -1, 2 ], [ -1, 0, 1 ] ]
+
 const threeSum = nums => {
   const pairs = [];
 
