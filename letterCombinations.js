@@ -1,3 +1,6 @@
+// INPUT: "23"
+// OUTPUT: [ 'ad', 'ae', 'af', 'bd', 'be', 'bf', 'cd', 'ce', 'cf' ]
+
 const letterCombinations = num => {
   if (!num.length) {
     return [];
