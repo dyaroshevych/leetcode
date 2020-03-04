@@ -1,3 +1,6 @@
+// INPUT: 3
+// OUTPUT: [ '()()()', '()(())', '(())()', '(()())', '((()))' ]
+
 const generateParenthesis = n => {
   const ans = [];
 
