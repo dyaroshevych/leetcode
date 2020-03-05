@@ -1,3 +1,6 @@
+// INPUT: [ 1, 1, 6, 5, 0 ]
+// OUTPUT: [ 1, 5, 0, 1, 6 ]
+
 const nextPermutation = nums => {
   if (!nums.length) {
     return nums;
