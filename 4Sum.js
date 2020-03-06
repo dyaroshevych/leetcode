@@ -1,3 +1,6 @@
+// INPUT: [ 1, 0, -1, 0, -2, 2 ], 0
+// OUTPUT: [ [ -2, -1, 1, 2 ], [ -2, 0, 0, 2 ], [ -1, 0, 0, 1 ] ]
+
 const fourSum = (nums, target) => {
   nums.sort((a, b) => a - b);
 
