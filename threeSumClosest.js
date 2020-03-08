@@ -1,3 +1,6 @@
+// INPUT: [ -1, 2, 1, -4 ], 1
+// OUTPUT: 2
+
 const threeSumClosest = (nums, target) => {
   let closestTarget = Infinity;
   nums.sort((a, b) => a - b);
