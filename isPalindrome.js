@@ -1,3 +1,6 @@
+// INPUT: "re2aceca2er"
+// OUTPUT: true
+
 const isPalindrome = str => {
   let start = 0,
     end = str.length - 1;
