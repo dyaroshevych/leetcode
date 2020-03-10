@@ -1,3 +1,6 @@
+// INPUT: "abbad"
+// OUTPUT: "abba"
+
 const longestPalindrome = str => {
   let maxLength = 0,
     maxStr = "";
