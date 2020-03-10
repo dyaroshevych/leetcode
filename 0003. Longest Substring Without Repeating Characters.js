@@ -1,3 +1,6 @@
+// INPUT: "pwwkew"
+// OUTPUT: 3
+
 const lengthOfLongestSubstring = str => {
   let startPointer = (endPointer = maxLength = 0);
   const characters = new Set();
