@@ -1,3 +1,6 @@
+// INPUT: [ 2, 7, 11, 15 ], 9
+// OUTPUT: [ 1, 2 ]
+
 const twoSum = (nums, target) => {
   let low = 0,
     high = nums.length - 1;
