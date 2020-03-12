@@ -1,3 +1,6 @@
+// INPUT: 4
+// OUTPUT: 2
+
 const mySqrt = num => {
   let left = 0,
     right = num;
@@ -17,4 +20,4 @@ const mySqrt = num => {
   return left - 1;
 };
 
-console.log(mySqrt(0));
+console.log(mySqrt(4));
