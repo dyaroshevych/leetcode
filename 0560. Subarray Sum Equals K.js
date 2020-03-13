@@ -1,3 +1,6 @@
+// INPUT: [ 1, 1, 1 ]
+// OUTPUT: 2
+
 const subarraySumQuadraticTime = (nums, k) => {
   const sums = [];
   let currentSum = 0;
@@ -36,4 +39,4 @@ const subarraySum = (nums, k) => {
   return result;
 };
 
-console.log(subarraySum([0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 0));
+console.log(subarraySum([1, 1, 1], 2));
