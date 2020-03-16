@@ -1,4 +1,7 @@
-const removeNthFromEnd = (head, n) => {
+// INPUT: 1 -> 2 -> 3 -> 4 -> 5, 2
+// OUTPUT: 1 -> 2 -> 3 -> 5
+
+const removeNthFromEndLinearSpace = (head, n) => {
   if (n === 0) {
     return head;
   }
@@ -23,7 +26,7 @@ const removeNthFromEnd = (head, n) => {
   return arr[0];
 };
 
-const removeNthFromEndConstantSpace = (head, n) => {
+const removeNthFromEnd = (head, n) => {
   if (n <= 0) {
     return head;
   }
@@ -53,10 +56,13 @@ const removeNthFromEndConstantSpace = (head, n) => {
 };
 
 console.log(
-  removeNthFromEndConstantSpace(
+  removeNthFromEnd(
     {
       val: 1,
-      next: { val: 2, next: { val: 3, next: null } }
+      next: {
+        val: 2,
+        next: { val: 3, next: { val: 4, next: { val: 5, next: null } } }
+      }
     },
     2
   )
