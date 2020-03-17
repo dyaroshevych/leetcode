@@ -1,3 +1,6 @@
+// INPUT: [ 99, 99 ], 2
+// OUTPUT: true
+
 const containsNearbyDuplicate = (nums, k) => {
   const numsMap = {};
 
@@ -12,10 +15,3 @@ const containsNearbyDuplicate = (nums, k) => {
 };
 
 console.log(containsNearbyDuplicate([99, 99], 2));
-
-// [1,2,3,1]
-// {
-//     1: Set {0, 4}
-//     2: Set {1}
-//     3: Set {2}
-// }
