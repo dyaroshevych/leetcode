@@ -1,3 +1,6 @@
+// INPUT: "anagram", "nagaram"
+// OUTPUT: true
+
 const isAnagramLinearSpace = (str1, str2) => {
   const getChars = str => {
     const chars = {};
@@ -45,4 +48,4 @@ const isAnagram = (str1, str2) => {
   return true;
 };
 
-console.log(isAnagram("abc", "cda"));
+console.log(isAnagram("anagram", "nagaram"));
