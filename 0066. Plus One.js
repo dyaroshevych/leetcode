@@ -1,3 +1,6 @@
+// INPUT: [1, 2, 3]
+// OUTPUT: [1, 2, 4]
+
 const plusOne = arr => {
   let currentDigitIdx = arr.length - 1;
 
@@ -16,4 +19,4 @@ const plusOne = arr => {
   return arr;
 };
 
-console.log(plusOne([9, 9, 9, 9]));
+console.log(plusOne([1, 2, 3]));
