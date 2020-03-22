@@ -1,3 +1,6 @@
+// INPUT: [ 1, 1, 2 ]
+// OUTPUT: [ [ 1, 1, 2 ], [ 1, 2, 1 ], [ 2, 1, 1 ] ]
+
 const permuteUnique = nums => {
   const permutations = [];
 
