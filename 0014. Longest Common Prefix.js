@@ -1,3 +1,6 @@
+// INPUT: [ "flower", "flow", "flight" ]
+// OUTPUT: "fl"
+
 const longestCommonPrefix = strs => {
   if (!strs[0]) {
     return "";
