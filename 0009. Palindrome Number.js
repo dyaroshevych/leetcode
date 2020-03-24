@@ -1,3 +1,6 @@
+// INPUT: 121
+// OUTPUT: true
+
 const isPalindrome = number => {
   if (number < 0) {
     return false;
