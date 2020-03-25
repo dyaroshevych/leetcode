@@ -1,7 +1,7 @@
-// while divisible by 2, divide by 2
-// while divisible by 3, divide by 3
-// while divisible by 5, divide by 5
-// if greater than 1, not an ugly number. if not, it's an ugly number
+// INPUT: 6
+// OUTPUT: true
+// EXPLANATION: 6 = 2 * 3
+
 const isUgly = num => {
   if (num <= 0) return false;
   while (!(num % 2)) {
@@ -17,4 +17,4 @@ const isUgly = num => {
   return num === 1;
 };
 
-console.log(isUgly(1));
+console.log(isUgly(6));
