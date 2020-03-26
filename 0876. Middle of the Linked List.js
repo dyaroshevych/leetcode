@@ -1,3 +1,6 @@
+// INPUT: 1 -> 2 -> 3 -> 4 -> 5
+// OUTPUT: 3 -> 4 -> 5
+
 const middleNode = head => {
   let slow = (fast = head);
 
