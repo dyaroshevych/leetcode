@@ -1,3 +1,6 @@
+// INPUT: [ 3, 4, -1, 1 ]
+// OUTPUT: 2
+
 const firstMissingPositive = nums => {
   let i = 0;
 
@@ -15,16 +18,10 @@ const firstMissingPositive = nums => {
     }
   }
 
-  console.log(nums);
-
   i = 0;
   while (nums[i] === ++i);
 
   return i;
 };
 
-console.log(firstMissingPositive([2, 1]));
-
-// 1 2 0
-// 2 1 0
-// 0 1 2
+console.log(firstMissingPositive([3, 4, -1, 1]));
