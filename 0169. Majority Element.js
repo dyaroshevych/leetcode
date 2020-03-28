@@ -1,3 +1,6 @@
+// INPUT: [2, 2, 1, 1, 1, 2, 2]
+// OUTPUT: 2
+
 const majorityElementHashMap = nums => {
   const frequency = {};
 
