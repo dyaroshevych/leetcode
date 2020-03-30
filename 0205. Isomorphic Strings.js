@@ -1,3 +1,6 @@
+// INPUT: "paper", "title"
+// OUTPUT: true
+
 const isIsomorphic = (str1, str2) => {
   const map1 = {},
     map2 = {};
@@ -15,4 +18,4 @@ const isIsomorphic = (str1, str2) => {
   return true;
 };
 
-console.log(isIsomorphic("ab", "aa"));
+console.log(isIsomorphic("paper", "title"));
