@@ -1,3 +1,6 @@
+// INPUT: [ 7, 1, 5, 3, 6, 4 ]
+// OUTPUT: 5
+
 const maxProfit = prices => {
   let minprice = Infinity,
     maxprofit = 0;
