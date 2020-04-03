@@ -1,5 +1,8 @@
-const isHappy = num => {
-  const getDigitSquareSum = n => {
+// INPUT: 19
+// OUTPUT: true
+
+const isHappy = (num) => {
+  const getDigitSquareSum = (n) => {
     let count = 0;
 
     while (n > 0) {
