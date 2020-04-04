@@ -1,4 +1,7 @@
-const trailingZeroes = n => {
+// INPUT: 24
+// OUTPUT: 4
+
+const trailingZeroes = (n) => {
   let count = 0;
 
   while (n > 0) {
