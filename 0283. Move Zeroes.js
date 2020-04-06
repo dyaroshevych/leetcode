@@ -1,3 +1,6 @@
+// INPUT: [ 0, 1, 3, 0, 12 ]
+// OUTPUT: [ 1, 3, 12, 0, 0 ]
+
 const moveZeroes = (nums) => {
   let slow = (fast = 0);
 
@@ -12,6 +15,8 @@ const moveZeroes = (nums) => {
     }
     fast++;
   }
+
+  console.log(nums);
 };
 
-console.log(moveZeroes([0, 1, 3, 0, 12]));
+moveZeroes([0, 1, 3, 0, 12]);
