@@ -1,3 +1,6 @@
+// INPUT: [ 10, 2, 5, 3 ]
+// OUTPUT: true
+
 const checkIfExist = (arr) => {
   const nums = new Set();
 
