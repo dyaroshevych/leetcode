@@ -1,4 +1,11 @@
-const luckyNumbers = matrix => {
+// INPUT: [
+//   [ 1, 10, 4, 2 ],
+//   [ 9, 3, 8, 7 ],
+//   [ 15, 16, 17, 12 ]
+// ]
+// OUTPUT: [ 12 ]
+
+const luckyNumbers = (matrix) => {
   const minRows = new Set(),
     maxColumns = new Array(matrix[0].length).fill(-Infinity);
   for (let i = 0; i < matrix.length; i++) {
@@ -26,6 +33,6 @@ console.log(
   luckyNumbers([
     [1, 10, 4, 2],
     [9, 3, 8, 7],
-    [15, 16, 17, 12]
+    [15, 16, 17, 12],
   ])
 );
