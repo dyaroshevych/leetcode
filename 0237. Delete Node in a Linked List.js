@@ -1,4 +1,7 @@
-const deleteNodeLinearTime = node => {
+// INPUT: 5 -> 1 -> 9
+// OUTPUT: 1 -> 9
+
+const deleteNodeLinearTime = (node) => {
   while (node) {
     if (node.next) {
       node.val = node.next.val;
@@ -11,7 +14,7 @@ const deleteNodeLinearTime = node => {
   }
 };
 
-const deleteNode = node => {
+const deleteNode = (node) => {
   node.val = node.next.val;
   node.next = node.next.next;
 };
@@ -19,6 +22,6 @@ const deleteNode = node => {
 console.log(
   deleteNode({
     val: 5,
-    next: { val: 1, next: { val: 9, next: null } }
+    next: { val: 1, next: { val: 9, next: null } },
   })
 );
