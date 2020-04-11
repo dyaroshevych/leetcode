@@ -1,3 +1,6 @@
+// INPUT: 1 -> 2 -> 6 -> 3 -> 4 -> 5 -> 6, 6
+// OUTPUT: 1 -> 2 -> 3 -> 4 -> 5
+
 const removeElements = (head, val) => {
   if (!head) {
     return head;
@@ -25,9 +28,9 @@ console.log(
         val: 2,
         next: {
           val: 6,
-          next: { val: 3, next: { val: 4, next: { val: 6, next: null } } }
-        }
-      }
+          next: { val: 3, next: { val: 4, next: { val: 6, next: null } } },
+        },
+      },
     },
     6
   )
