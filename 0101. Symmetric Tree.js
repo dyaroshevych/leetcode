@@ -1,3 +1,10 @@
+// INPUT:     1
+//           / \
+//          2   2
+//         / \ / \
+//        3  4 4  3
+// OUTPUT: true
+
 const isMirror = (left, right) => {
   if (!left && !right) {
     return true;
@@ -12,7 +19,7 @@ const isMirror = (left, right) => {
   );
 };
 
-const isSymmetric = root => isMirror(root, root);
+const isSymmetric = (root) => isMirror(root, root);
 
 console.log(
   isSymmetric({
@@ -20,12 +27,12 @@ console.log(
     right: {
       val: 2,
       right: { val: 3, right: null, left: null },
-      left: { val: 4, right: null, left: null }
+      left: { val: 4, right: null, left: null },
     },
     left: {
       val: 2,
       right: { val: 4, right: null, left: null },
-      left: { val: 3, right: null, left: null }
-    }
+      left: { val: 3, right: null, left: null },
+    },
   })
 );
