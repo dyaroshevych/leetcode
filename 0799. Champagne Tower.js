@@ -1,3 +1,6 @@
+// INPUT: [ 2, 1, 1 ]
+// OUTPUT: 0.5
+
 const champagneTower = (poured, queryRow, queryGlass) => {
   const tower = [[poured]];
 
@@ -18,4 +21,4 @@ const champagneTower = (poured, queryRow, queryGlass) => {
   return Math.min(tower[queryRow][queryGlass], 1);
 };
 
-console.log(champagneTower(2, 2, 0));
+console.log(champagneTower(2, 1, 1));
