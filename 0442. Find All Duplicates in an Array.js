@@ -1,4 +1,7 @@
-const findDuplicatesSet = nums => {
+// INPUT: [ 5, 4, 6, 7, 9, 3, 10, 9, 5, 6 ]
+// OUTPUT: [ 9, 5, 6 ]
+
+const findDuplicatesSet = (nums) => {
   const frequency = new Set(),
     duplicates = [];
 
@@ -13,7 +16,7 @@ const findDuplicatesSet = nums => {
   return duplicates;
 };
 
-const findDuplicates = nums => {
+const findDuplicates = (nums) => {
   const duplicates = [];
 
   for (let i = 0; i < nums.length; i++) {
@@ -30,6 +33,3 @@ const findDuplicates = nums => {
 };
 
 console.log(findDuplicates([5, 4, 6, 7, 9, 3, 10, 9, 5, 6]));
-
-//rgba(0, 59, 130, 0.91)
-//rgba(2, 44, 95, 0.91)
