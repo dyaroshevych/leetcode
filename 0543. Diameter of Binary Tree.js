@@ -1,3 +1,10 @@
+// INPUT: 1
+//       / \
+//      2   3
+//     / \
+//    4   5
+// OUTPUT: 3
+
 const diameterOfBinaryTree = (root) => {
   let diameter = 0;
 
