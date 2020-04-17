@@ -1,4 +1,7 @@
-const isPalindromeLinearSpace = head => {
+// INPUT: 1 -> 2 -> 2 -> 1
+// OUTPUT: true
+
+const isPalindromeLinearSpace = (head) => {
   const values = [];
 
   while (head) {
@@ -13,8 +16,8 @@ const isPalindromeLinearSpace = head => {
   return true;
 };
 
-const isPalindrome = head => {
-  const reverseList = head => {
+const isPalindrome = (head) => {
+  const reverseList = (head) => {
     let prev = null,
       next = null;
 
@@ -52,6 +55,6 @@ const isPalindrome = head => {
 console.log(
   isPalindrome({
     val: 1,
-    next: { val: 2, next: { val: 3, next: { val: 1, next: null } } }
+    next: { val: 2, next: { val: 2, next: { val: 1, next: null } } },
   })
 );
