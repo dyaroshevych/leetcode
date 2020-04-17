@@ -1,4 +1,7 @@
-const increasingTriplet = nums => {
+// INPUT: [1, 2, 3, 4, 5]
+// OUTPUT: true
+
+const increasingTriplet = (nums) => {
   let small = (medium = Infinity);
 
   for (let i = 0; i < nums.length; i++) {
