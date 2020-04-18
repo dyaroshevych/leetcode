@@ -1,64 +1,48 @@
 class Node {
-  constructor(val, next) {
+  constructor(val, next = null) {
     this.val = val;
     this.next = next;
   }
 }
 
-class List {
-  constructor() {
-    this.head = null;
-    this.tail = null;
+const mergeTwoLists = (root1, root2) => {
+  if (root1 === null) return root2;
+  if (root2 === null) return root1;
+
+  if (root1.val > root2.val) {
+    const temp = root1;
+    root1 = root2;
+    root2 = temp;
   }
 
-  push(val) {
-    if (this.head) {
-      this.tail.next = new Node(val, null);
-      this.tail = this.tail.next;
-    } else {
-      this.head = new Node(val, null);
-      this.tail = this.head;
-    }
-  }
-}
+  let parentNode = root1;
 
-const mergeTwoLists = (list1, list2) => {
-  const list = new List();
-  let pointer1 = list1,
-    pointer2 = list2;
-
-  while (pointer1 && pointer2) {
-    if (pointer1.val < pointer2.val) {
-      list.push(pointer1.val);
-      pointer1 = pointer1.next;
+  while (root2 && parentNode.next) {
+    if (parentNode.next.val < root2.val) {
+      parentNode = parentNode.next;
     } else {
-      list.push(pointer2.val);
-      pointer2 = pointer2.next;
+      parentNode.next = new Node(root2.val, parentNode.next);
+      parentNode = parentNode.next;
+      root2 = root2.next;
     }
   }
 
-  while (pointer1) {
-    list.push(pointer1.val);
-    pointer1 = pointer1.next;
+  if (root2) {
+    parentNode.next = root2;
   }
 
-  while (pointer2) {
-    list.push(pointer2.val);
-    pointer2 = pointer2.next;
-  }
-
-  return list.head;
+  return root1;
 };
 
 console.log(
   mergeTwoLists(
     {
       val: 1,
-      next: { val: 2, next: { val: 4, next: null } }
+      next: { val: 2, next: { val: 4, next: null } },
     },
     {
       val: 1,
-      next: { val: 3, next: { val: 4, next: null } }
+      next: { val: 3, next: { val: 4, next: null } },
     }
   )
 );
