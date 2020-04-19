@@ -1,3 +1,18 @@
+// INPUT: 4
+//       / \
+//      1   6
+//     /    /\
+//    0    5  7
+//             \
+//              8
+// OUTPUT: 30
+//        / \
+//      31   21
+//      /    /\
+//    31   26  15
+//              \
+//               8
+
 const bstToGst = (root) => {
   let currentSum = 0;
   const transform = (node) => {
