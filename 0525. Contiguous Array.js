@@ -1,3 +1,6 @@
+// INPUT: [ 0, 1, 0, 1 ]
+// OUTPUT: 4
+
 const findMaxLength = (nums) => {
   const numsCount = { 0: -1 };
   let count = (maxLength = 0);
