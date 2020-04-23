@@ -1,4 +1,7 @@
-const merge = intervals => {
+// INPUT: [ [ 1, 3 ], [ 2, 6 ], [ 8, 10 ],  [ 15, 18 ] ]
+// OUTPUT: [ [ 1, 6 ], [ 8, 10 ], [ 15, 18 ] ]
+
+const merge = (intervals) => {
   if (intervals.length === 0) return [];
 
   intervals.sort((a, b) => (a[0] < b[0] ? -1 : a[0] === b[0] ? 0 : 1));
@@ -23,6 +26,6 @@ console.log(
     [1, 3],
     [2, 6],
     [8, 10],
-    [15, 18]
+    [15, 18],
   ])
 );
