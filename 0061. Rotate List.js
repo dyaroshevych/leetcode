@@ -1,3 +1,6 @@
+// INPUT: 1 -> 2 -> 3 -> 4 -> 5 -> NULL, 2
+// OUTPUT: 4 -> 5 -> 1 -> 2 -> 3 -> NULL
+
 const rotateRight = (head, k) => {
   if (head === null || head.next === null || k === 0) return head;
 
