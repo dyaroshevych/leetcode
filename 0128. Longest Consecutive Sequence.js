@@ -1,3 +1,6 @@
+// INPUT: [ 100, 4, 200, 1, 3, 2 ]
+// OUTPUT: 4
+
 const longestConsecutive = (nums) => {
   const set = new Set(nums);
   let maxLength = 0;
