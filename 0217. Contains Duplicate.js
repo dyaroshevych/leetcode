@@ -1,4 +1,7 @@
-const containsDuplicate = nums => {
+// INPUT: [ 1, 2, 3, 1 ]
+// OUTPUT: true
+
+const containsDuplicate = (nums) => {
   const numsSet = new Set();
 
   for (let i = 0; i < nums.length; i++) {
