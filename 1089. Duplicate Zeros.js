@@ -1,4 +1,7 @@
-const duplicateZeros = arr => {
+// INPUT: [ 1, 0, 2, 3, 0, 4, 5, 0 ]
+// OUTPUT: [ 1, 0, 0, 2, 3, 0, 0, 4 ]
+
+const duplicateZeros = (arr) => {
   let zeroCount = 0,
     _length = arr.length - 1;
 
