@@ -1,4 +1,7 @@
-const getRow = numRows => {
+// INPUT: 3
+// OUTPUT: [ 1, 3, 3, 1 ]
+
+const getRow = (numRows) => {
   const triangle = [[1]];
 
   for (let i = 1; i <= numRows; i++) {
