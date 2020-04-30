@@ -1,9 +1,8 @@
-// iterate through all numbers in range [2..n - 1]
-// if number is prime, count++
+// INPUT: 10
+// OUTPUT: 4
 
-// O(n^1.5)
-const countPrimesInefficient = n => {
-  const isPrime = num => {
+const countPrimesInefficient = (n) => {
+  const isPrime = (num) => {
     for (let i = 2; i <= Math.sqrt(num); i++) {
       if (!(num % i)) return false;
     }
@@ -21,7 +20,7 @@ const countPrimesInefficient = n => {
 };
 
 // Sieve of Eratosthenes
-const countPrimes = n => {
+const countPrimes = (n) => {
   const arr = new Array(n).fill(true);
 
   for (let i = 2; i <= Math.floor(Math.sqrt(n)); i++) {
@@ -41,4 +40,4 @@ const countPrimes = n => {
   return primeCount;
 };
 
-console.log(countPrimes(1));
+console.log(countPrimes(10));
