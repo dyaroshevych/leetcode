@@ -66,21 +66,6 @@ class LRUCache {
       this.put(key, val);
     }
   }
-
-  print() {
-    let node = this.head;
-
-    while (node !== null) {
-      console.log(
-        node.prev && node.prev.key,
-        "->",
-        node.key,
-        "->",
-        node.next && node.next.key
-      );
-      node = node.prev;
-    }
-  }
 }
 
 const lruCache = new LRUCache(2);
@@ -93,6 +78,3 @@ lruCache.put(4, 3);
 console.log(lruCache.get(2));
 console.log(lruCache.get(3));
 console.log(lruCache.get(4));
-// lruCache.print();
-
-// lruCache.print();
