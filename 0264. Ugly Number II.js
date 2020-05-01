@@ -1,11 +1,7 @@
-// a[0] = 1
-// a[1] = min(a[0]*2, a[0]*3, a[0]*5)
-// a[2] = min(a[1] * 2, a[0] * 3, a[0] * 5)
-// a[3] = min(a[1] * 2, a[1] * 3, a[0] * 5)
-// a[4] = min(a[2] * 2, a[1] * 3, a[0] * 5)
-// a[5] = min(a[2] * 2, a[1] * 3, a[1] * 5)
+// INPUT: 10
+// OUTPUT: 12
 
-const nthUglyNumber = n => {
+const nthUglyNumber = (n) => {
   const uglyNumbers = [1];
 
   let pointer2 = (pointer3 = pointer5 = 0);
@@ -33,4 +29,4 @@ const nthUglyNumber = n => {
   return uglyNumbers[n - 1];
 };
 
-console.log(nthUglyNumber(1));
+console.log(nthUglyNumber(10));
