@@ -1,3 +1,8 @@
+// INPUT: 1
+//      /   \
+//     2     3
+// OUTPUT: 1
+
 const findTilt = (root) => {
   let tiltSum = 0;
 
