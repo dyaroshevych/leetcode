@@ -1,3 +1,15 @@
+// INPUT: 4
+//       / \
+//      2   7
+//     / \
+//    1   3
+//    val: 5
+// OUTPUT: 4
+//       /   \
+//      2     7
+//     / \   /
+//    1   3 5
+
 const insertIntoBST = (root, val) => {
   const newNode = { val: val, left: null, right: null };
   if (root === null) return newNode;
