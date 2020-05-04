@@ -1,3 +1,6 @@
+// INPUT: "aa", "aab"
+// OUTPUT: true
+
 const canConstruct = (ransomNote, magazine) => {
   const magazineChars = {};
 
