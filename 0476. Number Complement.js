@@ -1,3 +1,6 @@
+// INPUT: 5
+// OUTPUT: 2
+
 const findComplement = (num) => {
   let currPower = 1,
     complementNum = 0;
