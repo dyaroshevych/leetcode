@@ -1,3 +1,6 @@
+// INPUT: "(*))"
+// OUTPUT: true
+
 const checkValidString = (str) => {
   const brackets = [],
     stars = [];
