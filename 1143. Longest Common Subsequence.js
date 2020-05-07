@@ -1,3 +1,6 @@
+// INPUT: "abcde", "ace"
+// OUTPUT: "ace"
+
 const longestCommonSubsequence = (text1, text2) => {
   if (text1.length < text2.length)
     return longestCommonSubsequence(text2, text1);
