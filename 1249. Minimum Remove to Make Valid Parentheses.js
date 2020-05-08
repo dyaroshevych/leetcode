@@ -1,6 +1,9 @@
+// INPUT: "lee(t(c)o)de)"
+// OUTPUT: "lee(t(c)o)de"
+
 const minRemoveToMakeValid = (str) => {
   const stack = [];
-  let removeCount = (i = 0);
+  let i = 0;
 
   while (i < str.length) {
     if (str[i] === "(") {
@@ -10,7 +13,6 @@ const minRemoveToMakeValid = (str) => {
         if (stack.length > 0) {
           stack.pop();
         } else {
-          removeCount++;
           str = str.slice(0, i) + str.slice(i + 1);
           i--;
         }
