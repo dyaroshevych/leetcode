@@ -1,3 +1,15 @@
+// INPUT: 1
+//      /   \
+//     2     3
+//    /     / \
+//   2     2   4
+// value to remove: 2
+// OUTPUT: 1
+//          \
+//           3
+//            \
+//             4
+
 const removeLeafNodes = (root, target) => {
   const shouldDelete = (node) => {
     if (node === null) return false;
