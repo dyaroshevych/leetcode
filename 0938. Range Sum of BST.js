@@ -1,3 +1,11 @@
+// INPUT: 10
+//       /  \
+//      5    15
+//     / \    \
+//    3   7    18
+// min: 7, max: 15
+// OUTPUT: 32
+
 const rangeSumBST = (root, min, max) => {
   const traverse = (node) => {
     if (node === null) return 0;
