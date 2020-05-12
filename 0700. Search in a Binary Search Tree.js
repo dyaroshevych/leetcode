@@ -1,3 +1,13 @@
+// INPUT: 4
+//       / \
+//      2   7
+//     / \
+//    1   3
+// value to search: 2
+// OUTPUT: 2
+//        / \
+//       1   3
+
 const searchBST = (root, val) => {
   let currNode = root;
 
