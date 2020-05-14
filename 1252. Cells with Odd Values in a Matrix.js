@@ -1,3 +1,6 @@
+// INPUT: 2, 3, [ [ 0, 1 ], [ 1, 1 ] ]
+// OUTPUT: 6
+
 const oddCells = (rows, cols, indices) => {
   const rowsCount = new Array(rows).fill(0),
     colsCount = new Array(cols).fill(0);
