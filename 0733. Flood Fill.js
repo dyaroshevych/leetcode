@@ -1,3 +1,16 @@
+// INPUT: [
+//   [ 1, 1, 1 ],
+//   [ 1, 1, 0 ],
+//   [ 1, 0, 1 ],
+// ],
+// coordinates: [1, 1]
+// fill: 2
+// OUTPUT: [
+//   [ 2, 2, 2 ],
+//   [ 2, 2, 0 ],
+//   [ 2, 0, 1 ]
+// ]
+
 const floodFill = (image, sr, sc, newColor) => {
   const oldColor = image[sr][sc];
 
@@ -16,7 +29,7 @@ const floodFill = (image, sr, sc, newColor) => {
   return image;
 };
 
-console.table(
+console.log(
   floodFill(
     [
       [1, 1, 1],
