@@ -1,3 +1,12 @@
+// EXAMPLE:
+// const minStack = new MinStack();
+// minStack.push(0);
+// minStack.push(1);
+// minStack.push(0);
+// minStack.getMin() -> 0
+// minStack.pop();
+// minStack.getMin() -> 0
+
 class MinStack {
   constructor() {
     this.head = null;
