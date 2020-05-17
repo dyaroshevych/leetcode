@@ -1,3 +1,6 @@
+// INPUT: [ [ 0, 1 ], [ 1, 3 ], [ -4, -7 ], [ 5, 11 ] ]
+// OUTPUT: true
+
 const checkStraightLine = (coordinates) => {
   // y = kx + b
   const k =
