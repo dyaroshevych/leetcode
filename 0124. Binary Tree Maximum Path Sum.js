@@ -1,3 +1,8 @@
+// INPUT: 1
+//       / \
+//      2   3
+// OUTPUT: 6
+
 const maxPathSum = (root) => {
   if (root === null) return 0;
 
