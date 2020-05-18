@@ -1,3 +1,6 @@
+// INPUT: [ 5, -3, -2, 6, -1, 4 ]
+// OUTPUT: 14
+
 const maxSubarraySumCircular = (nums) => {
   let currMinSum = (currMaxSum = minSum = maxSum = numsSum = nums[0]);
   for (let i = 1; i < nums.length; i++) {
