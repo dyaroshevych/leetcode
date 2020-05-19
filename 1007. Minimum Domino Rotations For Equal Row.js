@@ -1,3 +1,6 @@
+// INPUT: [ 1, 2, 1, 1, 1, 2, 2, 2 ], [ 2, 1, 2, 2, 2, 2, 2, 2 ]
+// OUTPUT: 1
+
 const minDominoRotations = (arr1, arr2) => {
   let countA1 = 0,
     countA2 = arr1[0] === arr2[0] ? 0 : 1,
