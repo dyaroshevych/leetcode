@@ -1,3 +1,6 @@
+// INPUT: "1123", "0111"
+// OUTPUT: 1A1B
+
 const getHint = (secret, guess) => {
   const digits = new Array(10).fill(0);
 
