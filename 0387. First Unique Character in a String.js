@@ -1,3 +1,6 @@
+// INPUT: "loveleetcode"
+// OUTPUT: 2
+
 const firstUniqChar = (str) => {
   const lettersFrequency = {};
 
