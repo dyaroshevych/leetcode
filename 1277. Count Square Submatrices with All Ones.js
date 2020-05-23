@@ -1,3 +1,10 @@
+// INPUT: [
+//   [ 0, 1, 1, 1 ],
+//   [ 1, 1, 1, 1 ],
+//   [ 0, 1, 1, 1 ],
+// ]
+// OUTPUT: 15
+
 const countSquaresUnefficient = (matrix) => {
   const N = matrix.length,
     M = matrix[0].length;
