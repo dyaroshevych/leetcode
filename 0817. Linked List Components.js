@@ -1,3 +1,6 @@
+// INPUT: 0 -> 1 -> 2 -> 3, [ 0, 1, 3 ]
+// OUTPUT: 2
+
 const numComponents = (head, G) => {
   const values = new Set(G);
 
