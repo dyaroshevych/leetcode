@@ -1,3 +1,6 @@
+// INPUT: [ 1, 2, 3, 4 ], [ 1, 4 ]
+// OUTPUT: 1
+
 const findRadius = (houses, heaters) => {
   heaters.sort((a, b) => a - b);
 
