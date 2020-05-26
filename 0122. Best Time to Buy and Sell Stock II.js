@@ -1,3 +1,6 @@
+// INPUT: [ 7, 1, 5, 3, 6, 4 ]
+// OUTPUT: 7
+
 const maxProfit = (prices) => {
   let i = (profit = 0);
   while (i < prices.length - 1) {
