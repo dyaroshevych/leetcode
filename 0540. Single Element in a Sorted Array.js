@@ -1,3 +1,6 @@
+// INPUT: [ 1, 1, 2, 3, 3, 4, 4, 8, 8 ]
+// OUTPUT: 2
+
 const singleNonDuplicate = (nums) => {
   let low = 0,
     high = nums.length - 1;
