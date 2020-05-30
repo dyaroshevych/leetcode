@@ -1,3 +1,6 @@
+// INPUT: 16
+// OUTPUT: true
+
 const isPerfectSquareInefficient = (num) => {
   let i = 1,
     sum = 0;
