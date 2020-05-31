@@ -1,3 +1,10 @@
+// INPUT: 1
+//      / | \
+//     3  2  4
+//    / \
+//   5   6
+// OUTPUT: [ [ 1 ], [ 3, 2, 4 ], [ 5, 6 ] ]
+
 const levelOrder = (root) => {
   if (root === null) return [];
 
