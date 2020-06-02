@@ -1,3 +1,10 @@
+// INPUT: 3
+//       / \
+//      9  20
+//        /  \
+//       15   7
+// OUTPUT: true
+
 const isBalanced = (root) => {
   const getDepth = (node) => {
     if (node === null) return 0;
