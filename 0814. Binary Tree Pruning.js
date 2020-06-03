@@ -1,3 +1,14 @@
+// INPUT: 1
+//         \
+//          0
+//         / \
+//        0   1
+// OUTPUT: 1
+//          \
+//           0
+//            \
+//             1
+
 const pruneTree = (root) => {
   const pruneNode = (node) => {
     if (node === null) return null;
