@@ -1,3 +1,11 @@
+// INPUT: [
+//   [ 0, 1, 0, 0 ],
+//   [ 1, 1, 1, 0 ],
+//   [ 0, 1, 0, 0 ],
+//   [ 1, 1, 0, 0 ],
+// ]
+// OUTPUT: 16
+
 const islandPerimeter = (grid) => {
   let islandCount = (neighbourCount = 0);
 
