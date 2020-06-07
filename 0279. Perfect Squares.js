@@ -1,3 +1,6 @@
+// INPUT: 12
+// OUTPUT: 3
+
 const numSquares = (num) => {
   const dp = [0, 1];
 
