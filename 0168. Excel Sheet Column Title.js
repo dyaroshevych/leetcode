@@ -1,4 +1,7 @@
-const convertToTitle = n => {
+// INPUT: 26
+// OUTPUT: Z
+
+const convertToTitle = (n) => {
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let ans = "";
   while (n) {
