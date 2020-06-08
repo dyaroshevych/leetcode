@@ -1,11 +1,18 @@
-const isPowerOfTwo = n => {
-  if (n <= 0) return false;
-  while (n > 1) {
-    if (n % 2) return false;
-    n /= 2;
-  }
+// O(logn) time
+// const isPowerOfTwo = n => {
+//   if (n <= 0) return false;
+//   while (n > 1) {
+//     if (n % 2) return false;
+//     n /= 2;
+//   }
 
-  return true;
+//   return true;
+// };
+
+const isPowerOfTwo = (n) => {
+  if (n <= 0) return false;
+
+  return ((n - 1) & n) === 0;
 };
 
 console.log(isPowerOfTwo(5));

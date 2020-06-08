@@ -1,31 +1,38 @@
 const findAnagrams = (str, input) => {
-  const isAnagram = (charsMap) => {
-    for (let charCount of Object.values(charsMap)) if (charCount) return false;
-    return true;
-  };
-
-  const currLetters = {};
+  const letters = new Map();
 
   for (let i = 0; i < input.length; i++) {
-    if (currLetters[str[i]]) currLetters[str[i]]++;
-    else currLetters[str[i]] = 1;
-    if (currLetters[input[i]]) currLetters[input[i]]--;
-    else currLetters[input[i]] = -1;
+    if (letters.has(input[i])) letters.set(input[i], letters.get(input[i]) + 1);
+    else letters.set(input[i], 1);
   }
 
   const anagrams = [];
-  let startIdx = 0;
-  while (startIdx + input.length <= str.length) {
-    if (isAnagram(currLetters)) anagrams.push(startIdx);
+  let idx = 0,
+    counter = letters.size;
 
-    currLetters[str[startIdx]]--;
+  const changeLetterCountByVal = (index, val) => {
+    if (letters.has(str[index])) {
+      if (letters.get(str[index]) === 0) counter++;
 
-    if (currLetters[str[startIdx + input.length]])
-      currLetters[str[startIdx + input.length]]++;
-    else currLetters[str[startIdx + input.length]] = 1;
+      letters.set(str[index], letters.get(str[index]) + val);
 
-    startIdx++;
+      if (letters.get(str[index]) === 0) counter--;
+    }
+  };
+
+  while (idx <= str.length) {
+    if (counter === 0) anagrams.push(idx - input.length);
+
+    changeLetterCountByVal(idx, -1);
+
+    if (idx >= input.length) {
+      changeLetterCountByVal(idx - input.length, 1);
+    }
+
+    idx++;
   }
+
+  if (counter === 0) anagrams.push(idx - input.length);
 
   return anagrams;
 };
