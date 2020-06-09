@@ -1,3 +1,6 @@
+// INPUT: "delete", "leet"
+// OUTPUT: 403
+
 const minimumDeleteSum = (s1, s2) => {
   if (s1 === s2) return 0;
 
