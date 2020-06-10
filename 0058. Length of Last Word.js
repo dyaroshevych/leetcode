@@ -1,4 +1,7 @@
-const lengthOfLastWord = str => {
+// INPUT: "HelloWorld   "
+// OUTPUT: 10
+
+const lengthOfLastWord = (str) => {
   let len = 0;
   str = str.trim();
 
