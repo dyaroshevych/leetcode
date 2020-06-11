@@ -1,3 +1,10 @@
+// INPUT: 1
+//       / \
+//      2   3
+//       \
+//        4
+// OUTPUT: 1(2()(4))(3)
+
 const tree2str = (root) => {
   if (root === null) return "";
 
