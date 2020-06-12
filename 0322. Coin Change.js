@@ -1,3 +1,6 @@
+// INPUT: [ 1, 2, 5 ], 11
+// OUTPUT: 3
+
 const coinChange = (coins, amount) => {
   const dp = new Array(amount + 1);
 
