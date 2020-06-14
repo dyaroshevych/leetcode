@@ -1,3 +1,6 @@
+// INPUT: "abcabc"
+// OUTPUT: 10
+
 const numberOfSubstrings = (str) => {
   const charsCount = new Object({ a: 0, b: 0, c: 0 });
 
