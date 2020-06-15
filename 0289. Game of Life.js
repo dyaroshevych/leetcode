@@ -1,3 +1,6 @@
+// INPUT: [ [ 0, 1, 0 ], [ 0, 0, 1 ], [ 1, 1, 1 ], [ 0, 0, 0 ] ]
+// OUTPUT: [ [ 0, 0, 0 ], [ 1, 0, 1 ], [ 0, 1, 1 ], [ 0, 1, 0 ] ]
+
 const gameOfLife = (board) => {
   if (board.length === 0) return [];
 
