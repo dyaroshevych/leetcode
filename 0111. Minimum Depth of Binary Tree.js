@@ -1,3 +1,10 @@
+// INPUT: 3
+//       / \
+//      9  20
+//        /  \
+//       15   7
+// OUTPUT: 2
+
 const minDepth = (root) => {
   if (root === null) return 0;
 
