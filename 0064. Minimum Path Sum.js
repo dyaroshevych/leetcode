@@ -1,3 +1,6 @@
+// INPUT: [ [ 1, 3, 1 ], [ 1, 5, 1 ], [ 4, 2, 1 ] ]
+// OUTPUT: 7
+
 const minPathSum = (grid) => {
   for (let i = 1; i < grid.length; i++) {
     grid[i][0] = grid[i - 1][0] + grid[i][0];
