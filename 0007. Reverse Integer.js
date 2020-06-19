@@ -1,4 +1,7 @@
-const reverse = number => {
+// INPUT: -321
+// OUTPUT: -123
+
+const reverse = (number) => {
   let isNegative = false;
   if (number < 0) {
     isNegative = true;
@@ -15,8 +18,4 @@ const reverse = number => {
   return isNegative ? -ans : ans;
 };
 
-console.log(reverse(321));
 console.log(reverse(-321));
-console.log(reverse(-10));
-console.log(reverse(-1));
-console.log(reverse(-500));
