@@ -1,4 +1,8 @@
-const removeDuplicates = arr => {
+// INPUT: [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 ]
+// OUTPUT: 5
+// ARRAY: [ 0, 1, 2, 3, 4, 2, 2, 3, 3, 4 ]
+
+const removeDuplicates = (arr) => {
   let l = 0,
     r = 0;
   while (r < arr.length) {
@@ -10,7 +14,8 @@ const removeDuplicates = arr => {
     }
   }
 
+  console.log(arr);
   return l;
 };
 
-console.log(removeDuplicates([1, 1]));
+console.log(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
