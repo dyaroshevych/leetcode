@@ -1,3 +1,6 @@
+// INPUT: "ace", "abcde"
+// OUTPUT: true
+
 const isSubsequence = (str1, str2) => {
   let pointer1 = 0,
     pointer2 = 0;
