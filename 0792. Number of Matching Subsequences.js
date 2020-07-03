@@ -1,3 +1,6 @@
+// INPUT: "abcde", [ "aa", "ab", "ace", "abd", "acb" ]
+// OUTPUT: 3
+
 const numMatchingSubseq = (str, words) => {
   let count = 0;
 
