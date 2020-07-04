@@ -1,3 +1,6 @@
+// INPUT: [ 0, 1, 0, 1, 1, 0, 0, 1 ], 7
+// OUTPUT: [ 0, 0, 1, 1, 0, 0, 0, 0 ]
+
 const nextDay = (cells) => {
   const nextCells = [...cells];
   nextCells[0] = 0;
