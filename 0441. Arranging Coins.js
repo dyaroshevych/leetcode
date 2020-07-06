@@ -1,3 +1,6 @@
+// INPUT: 8
+// OUTPUT: 3
+
 const arrangeCoins = (n) => {
   const max = Math.floor(Math.sqrt(n * 2));
 
