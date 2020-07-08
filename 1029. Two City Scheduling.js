@@ -1,3 +1,6 @@
+// INPUT: [ [ 10, 20 ], [ 30, 200 ], [ 400, 50 ], [ 30, 20 ] ]
+// OUTPUT: 110
+
 const twoCitySchedCost = (costs) => {
   costs.sort((a, b) => a[1] - a[0] - (b[1] - b[0]));
 
