@@ -1,3 +1,6 @@
+// INPUT: [10, 9, 2, 5, 3, 7, 101, 18]
+// OUTPUT: 4
+
 const lengthOfLIS = (arr) => {
   if (arr.length === 0) return 0;
 
