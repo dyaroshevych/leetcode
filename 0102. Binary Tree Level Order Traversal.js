@@ -1,3 +1,10 @@
+// INPUT: 3
+//       / \
+//      9  20
+//        /  \
+//       15   7
+// OUTPUT: [ [ 3 ], [ 9, 20 ], [ 15, 7 ] ]
+
 const levelOrderIterative = (root) => {
   if (root === null) return [];
 
