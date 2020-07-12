@@ -1,4 +1,7 @@
-const climbStairs = n => {
+// INPUT: 5
+// OUTPUT: 8
+
+const climbStairs = (n) => {
   if (n <= 1) {
     return 1;
   }
