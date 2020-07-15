@@ -1,4 +1,12 @@
-const permute = nums => {
+// INPUT: [ 1, 2, 3 ]
+// OUTPUT: [ [ 1, 2, 3 ],
+// [ 1, 3, 2 ],
+// [ 2, 1, 3 ],
+// [ 2, 3, 1 ],
+// [ 3, 1, 2 ],
+// [ 3, 2, 1 ] ]
+
+const permute = (nums) => {
   const permutations = [];
   const go = (currentArr = [], visited = new Set()) => {
     if (currentArr.length === nums.length) {
