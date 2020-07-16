@@ -1,4 +1,7 @@
-const titleToNumber = s => {
+// INPUT: "AA"
+// OUTPUT: 27
+
+const titleToNumber = (s) => {
   let ans = 0,
     pow = 1;
 
