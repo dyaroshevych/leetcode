@@ -1,3 +1,6 @@
+// INPUT: [ "hello", "leetcode" ], "hlabcdefgijkmnopqrstuvwxyz"
+// OUTPUT: true
+
 const isAlienSorted = (words, order) => {
   for (let i = 1; i < words.length; i++) {
     const str1 = words[i - 1],
