@@ -1,3 +1,6 @@
+// INPUT: [ 1, 2, 3, 3, 3, -1, 0, 0 ]
+// OUTPUT: -1
+
 const findMin = (nums) => {
   if (nums[0] < nums[nums.length - 1]) {
     return nums[0];
