@@ -1,4 +1,4 @@
-// O(NlogN) time | O(1) space
+// // O(NlogN) time | O(1) space
 // const hIndex = (citations) => {
 //   citations.sort((a, b) => a - b);
 
@@ -17,6 +17,9 @@
 
 //   return start;
 // };
+
+// INPUT: [ 3, 0, 6, 1, 5 ]
+// OUTPUT: 3
 
 // O(N) time | O(N) space
 const hIndex = (citations) => {
