@@ -1,3 +1,6 @@
+// INPUT: 2, [ [1, 0], [0, 1] ]
+// OUTPUT: false
+
 const isCycle = (courseIdx, edges, visited) => {
   if (visited[courseIdx] === 1) return true;
 
