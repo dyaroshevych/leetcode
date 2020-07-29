@@ -1,3 +1,6 @@
+// INPUT: [ 1, 1, 1, 0 ]
+// OUTPUT: false
+
 const isOneBitCharacter = (bits) => {
   if (bits.length === 1) {
     return true;
