@@ -1,5 +1,10 @@
+// INPUT: 16
+// OUTPUT: true
+
 const isPowerOfFour = (num) => {
-  if (num <= 0 || Math.floor(Math.sqrt(num)) !== Math.sqrt(num)) return false;
+  if (num <= 0 || Math.floor(Math.sqrt(num)) !== Math.sqrt(num)) {
+    return false;
+  }
 
   return ((Math.sqrt(num) - 1) & Math.sqrt(num)) === 0;
 };
