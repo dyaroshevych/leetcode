@@ -1,31 +1,8 @@
-class Node {
-  constructor(value, next) {
-    this.value = value;
-    this.next = next;
-  }
-}
+// INPUT: "([)]"
+// OUTPUT: false
 
-class Stack {
-  constructor() {
-    this.head = null;
-  }
-
-  push(value) {
-    this.head = new Node(value, this.head);
-  }
-
-  pop() {
-    if (this.head) {
-      const value = this.head.value;
-      this.head = this.head.next;
-      return value;
-    }
-    return null;
-  }
-}
-
-const isValid = str => {
-  const brackets = new Stack();
+const isValid = (str) => {
+  const brackets = [];
 
   for (let i = 0; i < str.length; i++) {
     if (str[i] === "(" || str[i] === "[" || str[i] === "{") {
