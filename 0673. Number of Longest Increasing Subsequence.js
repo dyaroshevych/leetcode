@@ -1,3 +1,6 @@
+// INPUT: [ 1, 3, 5, 4, 7 ]
+// OUTPUT: 2
+
 const findNumberOfLIS = (nums) => {
   const lengths = new Array(nums.length).fill(1),
     counts = new Array(nums.length).fill(1);
