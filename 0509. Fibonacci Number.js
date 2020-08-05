@@ -1,4 +1,7 @@
-const fib = n => {
+// INPUT: 7
+// OUTPUT: 13
+
+const fib = (n) => {
   if (n < 2) {
     return n;
   } else {
