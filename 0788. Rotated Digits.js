@@ -1,3 +1,6 @@
+// INPUT: 10
+// OUTPUT: 4
+
 const isValid = (num) => {
   const digits = new Set(String(num).split(""));
 
