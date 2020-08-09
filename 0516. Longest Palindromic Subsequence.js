@@ -1,3 +1,6 @@
+// INPUT: "bbbab"
+// OUTPUT: 4
+
 const longestPalindromeSubseq = (str) => {
   const N = str.length,
     dp = new Array(N);
