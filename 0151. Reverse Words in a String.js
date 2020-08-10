@@ -1,3 +1,6 @@
+// INPUT: " hello! world "
+// OUTPUT: "world hello!"
+
 const reverseWords = (str) => {
   str = str.trim();
   const words = [];
