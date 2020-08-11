@@ -1,3 +1,8 @@
+// INPUT: 0 -> 9 -> 2 -> 4
+//                /
+//        5 -> 3 /
+// OUTPUT: 2 -> 4
+
 const getIntersectionNode = (headA, headB) => {
   let pointerA = headA,
     pointerB = headB;
@@ -27,11 +32,11 @@ console.log(
   getIntersectionNode(
     {
       val: 0,
-      next: { val: 9, next: { val: 1, next: list } }
+      next: { val: 9, next: { val: 1, next: list } },
     },
     {
       val: 5,
-      next: { val: 3, next: list }
+      next: { val: 3, next: list },
     }
   )
 );
