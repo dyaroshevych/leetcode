@@ -1,3 +1,6 @@
+// INPUT: [ 1, 0, 0 ,0, 1, 0, 1 ]
+// OUTPUT: 2
+
 const maxDistToClosest = (seats) => {
   let lastOccupiedSeatIndex = -1;
   let maxDistance = 0;
