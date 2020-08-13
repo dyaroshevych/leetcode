@@ -1,3 +1,6 @@
+// INPUT: [ 1, 3, 1 ], 1
+// OUTPUT: 0
+
 const hasAtLeastKDistancesSmallerThanNum = (nums, K, distance) => {
   let count = 0;
   let left = 0;
