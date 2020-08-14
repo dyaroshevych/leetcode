@@ -1,3 +1,6 @@
+// INPUT: "abccccdd"
+// OUTPUT: 7
+
 const longestPalindrome = (str) => {
   const lettersCount = {};
 
