@@ -1,3 +1,6 @@
+// INPUT: 4, 2, 3, 4
+// OUTPUT: 6
+
 const gcd = (a, b) => {
   if (a === 0) {
     return b;
