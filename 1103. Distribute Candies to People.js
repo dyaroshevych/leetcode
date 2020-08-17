@@ -1,3 +1,6 @@
+// INPUT: 7, 4
+// OUTPUT: [ 1, 2, 3, 1 ]
+
 const distributeCandies = (candies, numPeople) => {
   let given = 0;
 
