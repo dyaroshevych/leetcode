@@ -1,3 +1,6 @@
+// INPUT: [ 2, 3, 1, 1, 4 ]
+// OUTPUT: 2
+
 const jump = (nums) => {
   if (nums.length <= 1) {
     return 0;
