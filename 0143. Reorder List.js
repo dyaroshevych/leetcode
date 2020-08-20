@@ -1,3 +1,6 @@
+// INPUT: 1 -> 2 -> 3 -> 4
+// OUTPUT: 1 -> 4 -> 2 -> 3
+
 const reorderList = (head) => {
   if (head === null || head.next === null) {
     return;
