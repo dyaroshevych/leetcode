@@ -1,3 +1,6 @@
+// INPUT: 3, 3, 5
+// OUTPUT: 3
+
 const hasKNumbersLessThanItself = (height, width, K, num) => {
   let count = 0;
 
