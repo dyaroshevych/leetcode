@@ -1,3 +1,6 @@
+// INPUT: "ab#c", "ad#c"
+// OUTPUT: true
+
 const backspaceCompare = (s1, s2) => {
   let pointer1 = s1.length - 1,
     pointer2 = s2.length - 1,
