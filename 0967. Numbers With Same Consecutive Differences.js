@@ -1,3 +1,6 @@
+// INPUT: N = 3, K = 7
+// OUTPUT: [ 181, 292, 707, 818, 929 ]
+
 const generateNums = (nums, length, diff, currNum, currLength) => {
   if (length === currLength) {
     nums.push(currNum);
