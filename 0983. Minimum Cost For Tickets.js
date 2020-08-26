@@ -1,3 +1,6 @@
+// INPUT: [ 1, 4, 6, 7, 8, 20 ], [ 2, 7, 15 ]
+// OUTPUT: 11
+
 const mincostTickets = (days, costs) => {
   const costsAtDay = new Array(30).fill(0);
 
