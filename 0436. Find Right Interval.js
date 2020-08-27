@@ -1,3 +1,6 @@
+// INPUT: [ [ 3, 4 ], [ 2, 3 ], [ 1, 2 ] ]
+// OUTPUT: [ -1, 0, 1 ]
+
 const findRightInterval = (intervals) => {
   const sortedIntervals = intervals.map((interval, idx) => {
     return {
