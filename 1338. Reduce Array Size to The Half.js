@@ -1,3 +1,6 @@
+// INPUT: [ 3, 3, 3, 3, 5, 5, 5, 2, 2, 7 ]
+// OUTPUT: 2
+
 const minSetSize = (nums) => {
   const frequency = {};
 
