@@ -1,3 +1,6 @@
+// INPUT: 4, [ 1, 3, 1, 2 ]
+// OUTPUT: [ 1, 2 ]
+
 const mostVisited = (N, rounds) => {
   if (rounds[0] <= rounds[rounds.length - 1]) {
     return new Array(rounds[rounds.length - 1] - rounds[0] + 1)
