@@ -1,3 +1,6 @@
+// INPUT: [ 2, 2, 3, 4 ]
+// OUTPUT: 2
+
 const findLucky = (nums) => {
   const frequency = {};
 
