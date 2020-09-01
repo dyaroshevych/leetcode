@@ -1,3 +1,5 @@
+// INPUT: [ 0, 1, 3, 5, 6 ]
+// OUTPUT: 3
 const hIndex = (citations) => {
   let start = 0,
     end = citations.length - 1;
