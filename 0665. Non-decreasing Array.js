@@ -1,3 +1,6 @@
+// INPUT: [ 2, 3, 3, 2, 4 ]
+// OUTPUT: true
+
 const checkPossibility = (nums) => {
   let idx = null;
 
