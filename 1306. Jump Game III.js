@@ -1,3 +1,6 @@
+// INPUT: nums: [ 4, 2, 3, 0, 3, 1, 2 ], start: 5
+// OUTPUT: true
+
 // DFS O(N) time | O(N) space
 const canReach = (nums, start, visited = new Set(), depth = 1) => {
   if (nums[start] === 0) {
@@ -8,7 +11,7 @@ const canReach = (nums, start, visited = new Set(), depth = 1) => {
     return false;
   }
 
-  visited.add(nums[start]);
+  visited.add(start);
 
   if (
     (start - nums[start] >= 0 &&
@@ -64,4 +67,4 @@ const canReach = (nums, start, visited = new Set(), depth = 1) => {
 //     return false;
 // };
 
-console.log(canReach([4, 2, 3, 0, 1, 3, 1, 2], 5));
+console.log(canReach([4, 2, 3, 0, 3, 1, 2], 5));
