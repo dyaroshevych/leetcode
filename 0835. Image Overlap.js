@@ -1,3 +1,6 @@
+// INPUT: [[1,1,0],[0,1,0],[0,1,0]], [[0,0,0],[0,1,1],[0,0,1]]
+// OUTPUT: 3
+
 const largestOverlap = (matrixA, matrixB) => {
   const N = matrixA.length;
 
