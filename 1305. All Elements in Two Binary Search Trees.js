@@ -1,3 +1,8 @@
+// INPUT: 2        1
+//       / \      / \
+//      1   4    0   3
+// OUTPUT: [ 0, 1, 1, 2, 3, 4 ]
+
 const getAllElements = (root1, root2) => {
   const nodes1 = [];
   fillNodes(root1, nodes1);
