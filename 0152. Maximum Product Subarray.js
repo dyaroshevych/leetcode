@@ -1,3 +1,6 @@
+// INPUT: [ 2, 3, -2, 4 ]
+// OUTPUT: 6
+
 const maxProduct = (nums) => {
   let currMin = nums[0];
   let currMax = nums[0];
