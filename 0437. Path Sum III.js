@@ -1,3 +1,13 @@
+// INPUT: 10
+//       /  \
+//      5   -3
+//     / \    \
+//    3   2   11
+//   / \   \
+//  3  -2   1
+// sum: 8
+// OUTPUT: 3
+
 const pathSum = (root, target) => helper(root, { 0: 1 }, 0, target);
 
 const helper = (node, prevSums, currSum, target) => {
