@@ -1,3 +1,6 @@
+// INPUT: [ 1, 1, 0, 1, 1, 1 ]
+// OUTPUT: 3
+
 const findMaxConsecutiveOnes = (nums) => {
   let maxLength = 0;
   let currLength = 0;
