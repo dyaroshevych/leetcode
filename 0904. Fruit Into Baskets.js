@@ -1,3 +1,6 @@
+// INPUT: [ 0, 1, 2, 2, 1, 2, 0, 0, 1, 2, 2, 3 ]
+// OUTPUT: 5
+
 const totalFruit = (nums) => {
   let start = 0;
   let maxLength = 0;
