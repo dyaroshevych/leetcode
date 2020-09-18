@@ -1,3 +1,6 @@
+// INPUT: [ 1, 2, 1, 2, 3 ], 2
+// OUTPUT: 7
+
 const subarraysWithKDistinct = (nums, K) => {
   const window1 = new Window();
   const window2 = new Window();
