@@ -1,3 +1,6 @@
+// INPUT: 1 -> 2 -> 2 -> 3 -> 3 -> 4
+// OUTPUT: 1 -> 4
+
 const deleteDuplicates = (head) => {
   if (head === null) {
     return null;
