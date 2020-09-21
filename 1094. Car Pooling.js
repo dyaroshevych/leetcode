@@ -1,3 +1,6 @@
+// INPUT: [ [2, 1, 5], [3, 3, 7] ], capacity: 5
+// OUTPUT: true
+
 const carPooling = (trips, capacity) => {
   const passengerChanges = {};
 
