@@ -1,3 +1,10 @@
+// INPUT: [
+//   [1, 0, 0, 0],
+//   [0, 0, 0, 0],
+//   [0, 0, 2, -1],
+// ]
+// OUTPUT: 2
+
 const uniquePathsIII = (grid) => {
   let numNonObstacles = 0;
 
