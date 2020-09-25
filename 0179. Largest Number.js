@@ -1,3 +1,6 @@
+// INPUT: [ 68, 9, 39, 99, 989 ]
+// OUTPUT: "9999896839"
+
 const largestNumber = (nums) =>
   removeLeadingZeros(
     nums
