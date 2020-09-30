@@ -1,3 +1,6 @@
+// INPUT: [ 1, 2, 5, 9 ], 6
+// OUTPUT: 5
+
 const isBelowThreshould = (nums, threshold, divisor) => {
   let sum = 0;
 
