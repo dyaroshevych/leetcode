@@ -2,20 +2,19 @@
 // OUTPUT: 5
 // ARRAY: [ 0, 1, 2, 3, 4, 2, 2, 3, 3, 4 ]
 
-const removeDuplicates = (arr) => {
-  let l = 0,
-    r = 0;
-  while (r < arr.length) {
-    arr[l] = arr[r];
-    l++;
-    r++;
-    while (arr[r] === arr[r - 1]) {
-      r++;
+const removeDuplicates = (nums) => {
+  let currUpdatedIndex = 1;
+  let currIndex = 1;
+
+  while (currIndex < nums.length) {
+    if (nums[currIndex] !== nums[currIndex - 1]) {
+      nums[currUpdatedIndex++] = nums[currIndex];
     }
+
+    currIndex++;
   }
 
-  console.log(arr);
-  return l;
+  return currUpdatedIndex;
 };
 
 console.log(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]));
